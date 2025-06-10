@@ -60,9 +60,16 @@ const ProfilePage = () => {
                 />
               </label>
             </div>
-            <p className="text-sm text-zinc-400">
-              {isUpdatingProfile ? "Uploading..." : "Click the camera icon to update your photo"}
-            </p>
+              <p className="text-sm text-zinc-400">
+                {isUpdatingProfile ? (
+                  "Uploading..."
+                ) : (
+                  <>
+                    Click the camera icon to update your photo. <br />
+                    Max file size: <strong>1 MB</strong>.
+                  </>
+                )}
+              </p>
           </div>
 
           <div className="space-y-6">
