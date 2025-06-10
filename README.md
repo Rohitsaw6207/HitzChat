@@ -28,7 +28,8 @@ A blazing-fast real-time chat application built with the MERN stack, powered by 
 
 ## 📸 Preview
 
-![Preview Image](frontend/public/0002.png)
+![Preview Image](frontend/public/hitzchat.onrender.com_.png)
+![Preview Image](frontend/public/hitzchat.onrender.com_%20(1).png)
 
 ---
 
