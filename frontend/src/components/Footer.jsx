@@ -17,7 +17,7 @@ const Footer = () => {
         {/* Center */}
         <div className="text-center">
           <p>
-            © 2025 Online Game Hub. All rights reserved. |{" "}
+            © 2025 Hitzchat – Online Chatting Website. All rights reserved. |{" "}
             <Link to="/policy" className="text-purple-500 hover:underline">
               Privacy Policy
             </Link>
