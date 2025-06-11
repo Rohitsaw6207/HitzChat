@@ -9,7 +9,7 @@ const Footer = () => {
         {/* Left Side */}
         <div className="text-center md:text-left">
           <p className="flex items-center gap-1 justify-center md:justify-start">
-            Developed with by 
+            Developed by 
             <span className="text-gradient-to-r from-purple-400 to-cyan-400 font-semibold"> Rohit Kumar</span>
           </p>
         </div>
