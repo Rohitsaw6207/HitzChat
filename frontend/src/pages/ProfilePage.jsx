@@ -22,22 +22,21 @@ const ProfilePage = () => {
   };
 
   return (
-    <div className="h-screen pt-20">
+    <div className="min-h-screen pt-20 pb-20"> {/* <-- Updated here */}
       <div className="max-w-2xl mx-auto p-4 py-8">
         <div className="bg-base-300 rounded-xl p-6 space-y-8">
           <div className="text-center">
-            <h1 className="text-2xl font-semibold ">Profile</h1>
+            <h1 className="text-2xl font-semibold">Profile</h1>
             <p className="mt-2">Your profile information</p>
           </div>
 
-          {/* avatar upload section */}
-
+          {/* Avatar Upload Section */}
           <div className="flex flex-col items-center gap-4">
             <div className="relative">
               <img
                 src={selectedImg || authUser.profilePic || "/avatar.png"}
                 alt="Profile"
-                className="size-32 rounded-full object-cover border-4 "
+                className="size-32 rounded-full object-cover border-4"
               />
               <label
                 htmlFor="avatar-upload"
@@ -60,16 +59,16 @@ const ProfilePage = () => {
                 />
               </label>
             </div>
-              <p className="text-sm text-zinc-400">
-                {isUpdatingProfile ? (
-                  "Uploading..."
-                ) : (
-                  <>
-                    Click the camera icon to update your photo. <br />
-                    Max file size: <strong>1 MB</strong>.
-                  </>
-                )}
-              </p>
+            <p className="text-sm text-zinc-400">
+              {isUpdatingProfile ? (
+                "Uploading..."
+              ) : (
+                <>
+                  Click the camera icon to update your photo. <br />
+                  Max file size: <strong>1 MB</strong>.
+                </>
+              )}
+            </p>
           </div>
 
           <div className="space-y-6">
@@ -78,7 +77,9 @@ const ProfilePage = () => {
                 <User className="w-4 h-4" />
                 Full Name
               </div>
-              <p className="px-4 py-2.5 bg-base-200 rounded-lg border">{authUser?.fullName}</p>
+              <p className="px-4 py-2.5 bg-base-200 rounded-lg border">
+                {authUser?.fullName}
+              </p>
             </div>
 
             <div className="space-y-1.5">
@@ -86,12 +87,14 @@ const ProfilePage = () => {
                 <Mail className="w-4 h-4" />
                 Email Address
               </div>
-              <p className="px-4 py-2.5 bg-base-200 rounded-lg border">{authUser?.email}</p>
+              <p className="px-4 py-2.5 bg-base-200 rounded-lg border">
+                {authUser?.email}
+              </p>
             </div>
           </div>
 
           <div className="mt-6 bg-base-300 rounded-xl p-6">
-            <h2 className="text-lg font-medium  mb-4">Account Information</h2>
+            <h2 className="text-lg font-medium mb-4">Account Information</h2>
             <div className="space-y-3 text-sm">
               <div className="flex items-center justify-between py-2 border-b border-zinc-700">
                 <span>Member Since</span>
@@ -108,4 +111,5 @@ const ProfilePage = () => {
     </div>
   );
 };
+
 export default ProfilePage;
