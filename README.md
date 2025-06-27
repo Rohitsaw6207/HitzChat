@@ -64,10 +64,4 @@ A blazing-fast real-time chat application built with the MERN stack, powered by 
 
 ---
 
-## 🚀 Getting Started
 
-### 1. Clone the Repo
-
-```bash
-git clone https://github.com/your-username/hitzchat.git
-cd hitzchat
