@@ -7,3 +7,4 @@ export const axiosInstance = axios.create({
       : "https://hitchat-backend.onrender.com/api",
   withCredentials: true,
 });
+
