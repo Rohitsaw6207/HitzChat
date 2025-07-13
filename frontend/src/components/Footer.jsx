@@ -16,9 +16,9 @@ const Footer = () => {
 
         {/* Center */}
         <div className="text-center">
-          <p>
+          <p className="font-bold">
             © 2025 Hitzchat – Online Chatting Website. All rights reserved. |{" "}
-            <Link to="/policy" className="text-purple-500 hover:underline">
+            <Link to="/policy" className="hover:underline">
               Privacy Policy
             </Link>
           </p>
